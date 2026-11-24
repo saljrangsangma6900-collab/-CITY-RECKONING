@@ -25,16 +25,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: city-reckoning/package-lock.json
-
       - name: Install dependencies
         run: npm ci
         working-directory: city-reckoning
 
       - name: Build game
         run: npm run build -- --base=/CITY-RECKONING/
-        working-directory: city-reckoning
+ working-directory: city-reckoning
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
