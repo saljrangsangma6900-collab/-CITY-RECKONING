@@ -31,7 +31,7 @@ jobs:
 
       - name: Build game
         run: npm run build -- --base=/CITY-RECKONING/
- working-directory: city-reckoning
+        working-directory: city-reckoning
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
